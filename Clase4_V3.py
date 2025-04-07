@@ -9,7 +9,7 @@ class Mascota:
         self.fecha_ingreso = fecha_ingreso  # objeto datetime.date
         self.medicamento = medicamento
 
-    def __str__(self):
+    def __str__(self): # Método para representar la mascota como cadena
         return (f"[{self.historia_clinica}] {self.nombre} ({self.tipo}) - Peso: {self.peso}kg - "
                 f"Ingreso: {self.fecha_ingreso.strftime('%d/%m/%Y')} - Medicamento: {self.medicamento}")
 
@@ -157,5 +157,5 @@ def menu():
         else:
             print("❌ Opción inválida.")
 
-if __name__ == "__main__":
+if __name__ == "__main__": # Ejecutar el menú al iniciar el script
     menu()
