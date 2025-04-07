@@ -88,10 +88,10 @@ class HospitalVeterinario:
         total = len(self.caninos) + len(self.felinos)
         print(f"👥 Total de mascotas hospitalizadas: {total}")
 
-    def mostrar_medicamento(self, historia_clinica):
+    def mostrar_medicamento(self, historia_clinica): # Método para mostrar medicamento
         mascota = self.buscar_mascota(historia_clinica)
         if mascota:
-            if mascota.get_medicamento():
+            if mascota.get_medicamento(): # Verificar si tiene medicamento
                 print(f"💊 Medicamento: {mascota.get_medicamento()}")
             else:
                 print("⚠️ La mascota no tiene medicamento asignado.")
