@@ -1,3 +1,11 @@
+class MascotaHospitalizada:
+    def __init__(self, historia_clinica, nombre, tipo, peso, fecha_ingreso, medicamento):
+        self.historia_clinica = historia_clinica
+        self.nombre = nombre
+        self.tipo = tipo
+        self.peso = peso
+        self.fecha_ingreso = fecha_ingreso
+        self.medicamento = medicamento
 class Paciente:
     def __init__(self):
         self.__nombre = '' 
