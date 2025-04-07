@@ -24,8 +24,9 @@ class Mascota:
 
 class HospitalVeterinario:
     def __init__(self):
-        self.caninos = {}
-        self.felinos = {}
+        self.caninos = {} # Diccionario para caninos
+        self.felinos = {} # Diccionario para felinos
+        # Diccionario para medicamentos
         self.medicamentos = set()
 
     def agregar_mascota(self, mascota):
