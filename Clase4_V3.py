@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import datetime # Importar datetime para manejar fechas
 
 class Mascota:
     def __init__(self, nombre, historia_clinica, tipo, peso, fecha_ingreso, medicamento):
